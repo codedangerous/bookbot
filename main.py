@@ -4,6 +4,7 @@ def main():
     word_count = count_words(book_text)
     char_counts = count_characters(book_text)
     char_counts_list = to_sorted_list(char_counts)
+
     print(f"--- Begin report of {path_to_file} ---")
     print(f"{word_count} words found in the document")
     print("")
@@ -41,6 +42,5 @@ def to_sorted_list(dict):
 
 def sort_on(dict):
     return dict["count"]
-
 
 main()
